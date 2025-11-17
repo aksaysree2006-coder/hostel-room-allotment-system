@@ -1,0 +1,11 @@
+CREATE DATABASE hostel;
+USE hostel;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    regno VARCHAR(20) UNIQUE,
+    branch VARCHAR(10),
+    roomno VARCHAR(10),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
